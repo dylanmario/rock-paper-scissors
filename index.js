@@ -55,14 +55,26 @@ function playRound(humanChoice, computerChoice) {
 
     getWinner();
 
-    if (result === "Human Wins") {
-        console.log("You win, " + humanChoice + " beats " + computerChoice + "! AI hasn't taken your job yet.")
-    } else if (result === "Computer Wins") {
-        console.log("You lose, " + computerChoice + " beats " + humanChoice + "! The robots are taking over.")
-    } else {
-        console.log("It's a Draw!")
+function logResult() {
+        if (result === "Human Wins") {
+            console.log("You win, " + humanChoice + " beats " + computerChoice + "! AI hasn't taken your job yet.")
+        } else if (result === "Computer Wins") {
+            console.log("You lose, " + computerChoice + " beats " + humanChoice + "! The robots are taking over.")
+        } else {
+            console.log("It's a Draw!")
+        }
     }
-    
+
+    logResult();
+
+    if (result === "Human Wins") {
+        humanScore++
+    } else if (result === "Computer Wins") {
+        computerScore++
+    } else {
+    }
+
+
 }
 
 const humanSelection = getHumanChoice();
