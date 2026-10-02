@@ -1,17 +1,3 @@
-/* PSEUODCODE 
-Return random value of computer choice
-Prompt to obtain human value
-Return human input value as a string
-Create two variables to hold the human score and computer score
-Initialise those variables to zero
-Create a funtion to play a round, define the two human choice and computer choice variables as arguments
-Make sure human parameters are case-insenstive
-Return a string value based on whether the human play won or lost
-Increment score based on the round winner 
-Create a function to incorporate above for 5 rounds
-*/
-
-/* Return random value of computer choice */
 function getComputerChoice() {
     let computerGuess = Math.floor(Math.random() * 3) + 1;
     if (computerGuess === 1) {
@@ -24,19 +10,14 @@ function getComputerChoice() {
     }
 } 
 
-/* Prompt to obtain human value */
 function getHumanChoice() {
     const choice = prompt("Please enter your choice? Rock, Paper or Scissors").toLowerCase();
     return choice
 }
 
-/* Return human input value as a string */ 
-/* Already returned as a string above */ 
 let humanScore = 0;
 let computerScore = 0;
-/* Create two variables to hold the human score and computer score */ 
-/* Initialise those variables to zero */
-/* Create a funtion to play a round, define the two human choice and computer choice variables as arguments */
+
 function playRound(humanChoice, computerChoice) {
     let result;
 
